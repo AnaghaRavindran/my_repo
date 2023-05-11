@@ -1,0 +1,26 @@
+<h3>Programs offered</h3>
+ 
+ <table border="1">
+   {% for r in program_rows %}
+     <tr>
+       <td>{{r.name}}</td>
+       <td>{{r.roll_no}}</td>
+       <td>{{r.email}}</td>
+       <td>{{ r.title }}</td>
+       <td>{{ r.branch }}</td>
+     </tr>
+   {% endfor %}
+ </table>
+ <h3>Student list</h3>
+
+ <table border="1">
+  {% for s in student_rows %}
+    <tr>
+      <td>{{s.name}}</td>
+      <td>{{s.roll_no}}</td>
+      <td>{{s.email}}</td>
+      <td>{{s.title }}</td>
+      <td>{{s.branch }}</td>
+    </tr>
+  {% endfor %}
+</table>
